@@ -43,3 +43,7 @@ console.log(typeof scoreValue);
 // Stack (Primitive), Heap (Non-Primitive)
 
 let myYoutubename ="TaskeenHaider"
+
+let anothername = myYoutubename
+
+console.log(anothername);
