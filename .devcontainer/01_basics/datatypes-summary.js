@@ -12,15 +12,24 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 const bigNumber = 234567654356543234567n
 
-console.log(bigNumber);
-
-
-
+// console.log(bigNumber);
 
 // Reference (Non Primitive)
 
 // Array, Objects, Funtions
+
+const heros = ["Taskeen", "Shahzaib", "Shahid"];
+let myObj ={
+    name: "Taskeen",
+    age: 19,
+}
+
+const myFunction = function() {
+    console.log("Hello World");
+}
+
+console.log(typeof scoreValue);
