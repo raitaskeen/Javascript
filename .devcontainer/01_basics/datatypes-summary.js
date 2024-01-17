@@ -20,7 +20,7 @@ const bigNumber = 234567654356543234567n
 
 // Reference (Non Primitive)
 
-// Array, Objects, Funtions
+// Array, Objects, Functions
 
 const heros = ["Taskeen", "Shahzaib", "Shahid"];
 let myObj ={
@@ -45,5 +45,16 @@ console.log(typeof scoreValue);
 let myYoutubename ="TaskeenHaider"
 
 let anothername = myYoutubename
+anothername = "Shahzaib"
 
 console.log(anothername);
+console.log(myYoutubename);
+
+let userOne = {
+    name: "Taskeen",
+    age: 19,
+    email: "raitaskeenhaider786@gmail.com"
+}
+let userTwo = userOne
+userTwo.name = "Shahzaib"
+console.log(userTwo);
