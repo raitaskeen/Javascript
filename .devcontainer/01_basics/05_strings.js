@@ -19,3 +19,6 @@ console.log(gameName.split(""));
 console.log(gameName.split(" ").join("-"));
 console.log(gameName.slice(1, 3));
 console.log(gameName.split(" "));
+
+const newString = gameName.substring(0, 3);
+console.log(newString);
