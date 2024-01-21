@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Clock</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        #clock {
+            font-size: 2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock"></div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+
+            const formattedHours = hours < 10 ? `0${hours}` : hours;
+            const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+            const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
+
+            const clockElement = document.getElementById('clock');
+            clockElement.textContent = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initial update
+        updateClock();
+    </script>
+</body>
+</html>
