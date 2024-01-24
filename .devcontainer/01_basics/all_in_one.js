@@ -65,7 +65,7 @@ const john = new Person("John Doe", 25);
 greet(john);
 
 // Use the DaysOfWeek enum
-const today = DaysOfWeek.Wednesday;
+const today = DaysOfWeek.Thursday;
 console.log(`Today is ${today}`);
 
 // Create a circle

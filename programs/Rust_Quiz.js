@@ -9,7 +9,7 @@ class Question {
 }
 
 function main() {
-    console.log("Welcome to the Rust Info Quiz!");
+    console.log("My name is Taskeen!");
 
     let score = 0;
 
